@@ -31,7 +31,7 @@ installer_version: "latest"
 
 mods:
   - name: "Fabric API"
-    url: "https://cdn.modrinth.com/data/P7dR8mSH/versions/adK8OREi/fabric-api-0.105.0+1.21.1.jar"
+    url: "https://cdn.modrinth.com/data/P7dR8mSH/versions/yGAe1owa/fabric-api-0.116.9%2B1.21.1.jar"
     side: both
   # Add your mods here
 ```
@@ -129,11 +129,15 @@ Direct players to your GitHub releases page. They download:
 On first launch, the launcher automatically downloads Java 21, Minecraft, Fabric, and
 installs the bundled mods (~500 MB, one time). After that, it's just click Play.
 
+**Authentication:** If `azure_client_id` is set in your `pack.yaml`, players sign in
+with Microsoft for online servers. If it's not set, a **Play Offline** username prompt
+appears instead — this works for singleplayer, LAN, and `online-mode=false` servers.
+
 ---
 
 ## Local testing
 
-Install `game-create` to test your pack locally before pushing a tag:
+### Option A — pre-built binary (quickest)
 
 ```bash
 # Linux
@@ -141,15 +145,55 @@ curl -L -o /usr/local/bin/game-create \
   https://github.com/kenvandine/minecraft-server-snap/releases/latest/download/game-create-linux
 chmod +x /usr/local/bin/game-create
 
-# Build artifacts locally
-game-create build pack.yaml --output ./dist
-
-# Test the server artifact
-sudo minecraft-server.install-pack dist/server.tar.xz
+game-create build pack.yaml --output ./dist-pack
 ```
 
-To test the launcher locally, see the
-[launcher build guide](https://github.com/kenvandine/minecraft-server-snap/blob/main/docs/launcher.md#building-locally).
+### Option B — from source (no release needed)
+
+```bash
+git clone https://github.com/kenvandine/minecraft-server-snap
+cd minecraft-server-snap
+
+python3 -m venv .venv
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
+pip install -e tools/game-create/
+
+# Run from your game repo
+game-create build /path/to/pack.yaml --output ./dist-pack
+```
+
+### Test the server artifact
+
+```bash
+sudo minecraft-server.install-pack dist-pack/server.tar.xz
+sudo snap restart minecraft-server.server
+```
+
+### Build and test the AppImage locally
+
+```bash
+# Clone the launcher template
+git clone https://github.com/kenvandine/minecraft-server-snap
+cd minecraft-server-snap/launcher
+
+# Inject your client artifact
+mkdir -p resources/mods
+tar -xJf /path/to/dist-pack/client.tar.xz -C resources/
+
+# Update app name (or edit electron-builder.yml directly)
+sed -i 's/^productName:.*/productName: "My Awesome Modpack"/' electron-builder.yml
+sed -i 's/^appId:.*/appId: "com.minecraft.my-awesome-modpack"/' electron-builder.yml
+
+# Install and build
+npm install
+npm run build:linux             # → dist/*.AppImage
+
+# Run (if FUSE is available)
+./"My Awesome Modpack-1.0.0.AppImage"
+
+# Run without FUSE
+./"My Awesome Modpack-1.0.0.AppImage" --appimage-extract-and-run
+```
 
 ---
 
@@ -213,3 +257,15 @@ Add `azure_client_id` to `pack.yaml`. See the
 Run `sudo snap logs minecraft-server.server`. Common causes:
 - Port 25565 already in use (another server running)
 - Insufficient memory (`java_args` in pack.yaml requests more RAM than available)
+
+**AppImage won't launch — "AppImages require FUSE"**
+Run with `--appimage-extract-and-run` flag, or install FUSE:
+```bash
+sudo apt install libfuse2       # Ubuntu/Debian
+./"My Game-1.0.0.AppImage" --appimage-extract-and-run
+```
+
+**Mod download fails with 404 during `game-create build`**
+The mod URL in `pack.yaml` is stale. Modrinth CDN URLs are permanent per version, but
+the version ID in the path must match an actual release. Fetch a fresh URL from
+[modrinth.com](https://modrinth.com) → Versions → right-click download → Copy link.
