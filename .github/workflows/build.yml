@@ -1,0 +1,13 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: kenvandine/minecraft-server-snap/.github/workflows/reusable-pack-build.yml@main
+    with:
+      config: pack.yaml
