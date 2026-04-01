@@ -74,6 +74,10 @@ Watch the progress under **Actions** in your repository.
 
 ## Adding and updating mods
 
+> See [docs/finding-mods.md](docs/finding-mods.md) for a full guide covering how to
+> search Modrinth, verify compatibility, get stable URLs, check dependencies, and choose
+> which `side` each mod belongs on.
+
 Find the mod on [modrinth.com](https://modrinth.com), navigate to **Versions**, select
 the version matching your `minecraft_version` and `fabric` loader, right-click the
 download button and copy the URL.
