@@ -3,8 +3,8 @@
 A template repository for creating a modded Minecraft game experience using the
 [minecraft-server-snap](https://github.com/kenvandine/minecraft-server-snap) framework.
 
-Push a tag → get a GitHub release with a server artifact, a Linux launcher, and a
-Windows launcher — automatically.
+Push a tag → get a GitHub release with a server artifact, a Linux launcher, a
+Windows launcher, and a macOS launcher — automatically.
 
 ---
 
@@ -71,7 +71,8 @@ GitHub Actions will automatically:
 2. Build `server.tar.xz`
 3. Build a Linux AppImage launcher
 4. Build a Windows exe installer
-5. Create a GitHub release with all three artifacts
+5. Build a macOS DMG launcher (Apple Silicon / M-series)
+6. Create a GitHub release with all four artifacts
 
 Watch the progress under **Actions** in your repository.
 
@@ -134,6 +135,7 @@ Direct players to your GitHub releases page. They download:
 
 - **Linux**: `Your-Modpack-1.0.0.AppImage` → `chmod +x *.AppImage && ./*.AppImage`
 - **Windows**: `Your-Modpack-Setup-1.0.0.exe` → run the installer
+- **macOS (M-series)**: `Your-Modpack-1.0.0.dmg` → open, drag to Applications, run
 
 On first launch, the launcher automatically downloads Java 21, Minecraft, Fabric, and
 installs the bundled mods (~500 MB, one time). After that, it's just click Play.
