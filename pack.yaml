@@ -86,6 +86,21 @@ mods:
   - name: "C2ME"
     url: "https://cdn.modrinth.com/data/VSNURh3q/versions/DSqOVCaF/c2me-fabric-mc1.21.1-0.3.0%2Balpha.0.362.jar"
     side: both
+    
+  # Iris Shaders — A modern shader pack loader for Minecraft intended to be compatible with existing OptiFine shader packs
+  - name: "Iris Shaders"
+    url: "https://cdn.modrinth.com/data/YL57xq9U/versions/zsoi0dso/iris-fabric-1.8.8%2Bmc1.21.1.jar"
+    side: client
+#-----------------------------------------------------------------------------------------------------
+  # Complementary Shaders — Preserving the elements of Minecraft with exceptional quality, detail, and performance.
+  - name: "Complementary Shaders - Reimagined"
+    url: "https://cdn.modrinth.com/data/HVnmMxH1/versions/836bPNGo/ComplementaryReimagined_r5.7.1.zip"
+    side: client
+#-----------------------------------------------------------------------------------------------------
+  # Complementary Shader — Euphoria Patches is an add-on for Complementary Shaders, extending it with more optional features and settings.
+  - name: "Euphoria Patches"
+    url: "https://cdn.modrinth.com/data/4H6sumDB/versions/pI6g9nqi/EuphoriaPatcher-1.8.6-r5.7.1-fabric.jar"
+    side: client
 
   # Jade — Shows information about what you are looking at. (Hwyla/Waila fork for Minecraft 1.16+)
   - name: "Jade"
@@ -225,7 +240,7 @@ mods:
     side: both
 
   # Friends&FoesAddon — An addon for the Friends&Foes mod, adding a beekeeper hut structure.
-  - name: "Friends&Foes Beekeeper hut"
+  - name: "Friends&Foes Beekeeper hut
     url: "https://cdn.modrinth.com/data/Kt4RVKEd/versions/zxhxIzv3/beekeeperhut-fabric-3.0.2%2Bmc1.21.1.jar"
     side: server
 
