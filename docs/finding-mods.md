@@ -160,6 +160,56 @@ starting points for any modpack targeting 1.21.x.
 
 ---
 
+## Adding shader packs
+
+Shader packs change the visual rendering of the game (lighting, shadows, water, sky).
+They are placed in `shaderpacks/` in the player's game directory and are always
+client-only.
+
+**Requirements:**
+- Add [Iris Shaders](https://modrinth.com/mod/iris) (or another compatible renderer)
+  as a `side: client` mod — shader packs do nothing without it.
+- Shader packs use `.zip` files, not `.jar` files.
+
+**Finding shader pack URLs on Modrinth:**
+1. Go to [modrinth.com/shaders](https://modrinth.com/shaders) and filter by your MC version
+2. Open a shader page (e.g. [Complementary Reimagined](https://modrinth.com/shader/complementary-reimagined))
+3. Click **Versions**, then the version you want
+4. Right-click the download button → **Copy link address**
+
+The URL will look like:
+```
+https://cdn.modrinth.com/data/HVnmMxH1/versions/{version-id}/ComplementaryReimagined_r5.4.zip
+```
+
+**Example `pack.yaml` with a shader pack:**
+
+```yaml
+mods:
+  - name: "Sodium"
+    url: "https://cdn.modrinth.com/data/AANobbMI/versions/.../sodium-fabric-mc1.21.1.jar"
+    side: client
+
+  - name: "Iris Shaders"
+    url: "https://cdn.modrinth.com/data/YL57xq9U/versions/.../iris-fabric-mc1.21.1.jar"
+    side: client
+
+shader_packs:
+  - name: "Complementary Reimagined"
+    url: "https://cdn.modrinth.com/data/HVnmMxH1/versions/.../ComplementaryReimagined_r5.4.zip"
+```
+
+**Popular shader packs on Modrinth:**
+
+| Shader | Style | Performance |
+|--------|-------|-------------|
+| [Complementary Reimagined](https://modrinth.com/shader/complementary-reimagined) | Vanilla-style, beautiful lighting | Medium |
+| [Complementary Shaders](https://modrinth.com/shader/complementary-shaders-v4) | More customizable, heavier | Medium-High |
+| [BSL Shaders](https://modrinth.com/shader/bsl-shaders) | Warm, colorful, popular | Medium |
+| [Sildurs Vibrant Shaders](https://modrinth.com/shader/sildurs-vibrant-shaders) | Bright and saturated | Low-Medium |
+
+---
+
 ## Example: adding a mod to your pack
 
 1. Find the mod on Modrinth, filter to your MC version + Fabric

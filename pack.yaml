@@ -62,7 +62,24 @@ mods:
     url: "https://cdn.modrinth.com/data/gvQqBUqZ/versions/XQJtuOTA/lithium-fabric-0.15.3%2Bmc1.21.1.jar"
     side: both
 
+  # Iris Shaders — required if you want to use shader packs (uncomment to enable)
+  # - name: "Iris Shaders"
+  #   url: "https://cdn.modrinth.com/data/YL57xq9U/versions/.../iris-fabric-mc1.21.1.jar"
+  #   side: client
+
   # Add more mods below following the same pattern:
   # - name: "Mod Name"
   #   url: "https://cdn.modrinth.com/..."
   #   side: both
+
+# ─── Shader packs ──────────────────────────────────────────────────────────
+# Shader packs are client-only and placed in shaderpacks/ in the game directory.
+# Requires Iris Shaders (or another shader-compatible renderer) in the mods list.
+#
+# URL tips:
+#   Modrinth: open shader page → Versions → right-click download → Copy link address
+#   Shader pack URLs end in .zip (not .jar)
+#
+# shader_packs:
+#   - name: "Complementary Reimagined"
+#     url: "https://cdn.modrinth.com/data/HVnmMxH1/versions/.../ComplementaryReimagined_r5.4.zip"
