@@ -64,6 +64,31 @@ mods:
     url: "https://cdn.modrinth.com/data/P7dR8mSH/versions/ID8pq1x1/fabric-api-0.116.10%2B1.21.1.jar"
     side: both
 
+  # CreativeCore — A core library mod required by AmbientSounds and other mods
+  - name: "CreativeCore"
+    url: "https://cdn.modrinth.com/data/OsZiaDHq/versions/4EBcqGWq/CreativeCore_FABRIC_v2.13.29_mc1.21.1.jar"
+    side: both
+
+  # GeckoLib — Animation library required by Critters and Companions
+  - name: "GeckoLib"
+    url: "https://cdn.modrinth.com/data/8BmcQJ2H/versions/3GjkJptS/geckolib-fabric-1.21.1-4.8.4.jar"
+    side: both
+
+  # YetAnotherConfigLib (YACL) — Config library required by Friends&Foes
+  - name: "YetAnotherConfigLib"
+    url: "https://cdn.modrinth.com/data/1eAoo2KR/versions/o3cDn8Vp/yet_another_config_lib_v3-3.8.2%2B1.21.1-fabric.jar"
+    side: both
+
+  # Resourceful Lib — Library required by Handcrafted and Friends&Foes
+  - name: "Resourceful Lib"
+    url: "https://cdn.modrinth.com/data/G1hIVOrD/versions/Hf91FuVF/resourcefullib-fabric-1.21-3.0.12.jar"
+    side: both
+
+  # Moonlight Lib — Library required by Supplementaries
+  - name: "Moonlight Lib"
+    url: "https://cdn.modrinth.com/data/twkfQtEc/versions/Oseln6Nb/moonlight-1.21-2.29.26-fabric.jar"
+    side: both
+
   # Iris Shaders — required if you want to use shader packs (uncomment to enable)
   - name: "Iris Shaders"
     url: "https://cdn.modrinth.com/data/YL57xq9U/versions/zsoi0dso/iris-fabric-1.8.8%2Bmc1.21.1.jar"
@@ -104,10 +129,6 @@ mods:
     url: "https://cdn.modrinth.com/data/VSNURh3q/versions/DSqOVCaF/c2me-fabric-mc1.21.1-0.3.0%2Balpha.0.362.jar"
     side: both
     
-  # Iris Shaders — A modern shader pack loader for Minecraft intended to be compatible with existing OptiFine shader packs
-  - name: "Iris Shaders"
-    url: "https://cdn.modrinth.com/data/YL57xq9U/versions/zsoi0dso/iris-fabric-1.8.8%2Bmc1.21.1.jar"
-    side: client
 #-----------------------------------------------------------------------------------------------------
   # Complementary Shaders — Preserving the elements of Minecraft with exceptional quality, detail, and performance.
   - name: "Complementary Shaders - Reimagined"
