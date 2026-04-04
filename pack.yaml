@@ -240,7 +240,7 @@ mods:
     side: both
 
   # Friends&FoesAddon — An addon for the Friends&Foes mod, adding a beekeeper hut structure.
-  - name: "Friends&Foes Beekeeper hut
+  - name: "Friends&Foes Beekeeper hut"
     url: "https://cdn.modrinth.com/data/Kt4RVKEd/versions/zxhxIzv3/beekeeperhut-fabric-3.0.2%2Bmc1.21.1.jar"
     side: server
 
