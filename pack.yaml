@@ -130,11 +130,6 @@ mods:
     side: both
     
 #-----------------------------------------------------------------------------------------------------
-  # Complementary Shaders — Preserving the elements of Minecraft with exceptional quality, detail, and performance.
-  - name: "Complementary Shaders - Reimagined"
-    url: "https://cdn.modrinth.com/data/HVnmMxH1/versions/836bPNGo/ComplementaryReimagined_r5.7.1.zip"
-    side: client
-#-----------------------------------------------------------------------------------------------------
   # Complementary Shader — Euphoria Patches is an add-on for Complementary Shaders, extending it with more optional features and settings.
   - name: "Euphoria Patches"
     url: "https://cdn.modrinth.com/data/4H6sumDB/versions/pI6g9nqi/EuphoriaPatcher-1.8.6-r5.7.1-fabric.jar"
