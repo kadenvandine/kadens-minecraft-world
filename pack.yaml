@@ -38,6 +38,18 @@ background_color: "#0d1117"
 # Increase Xmx for heavier modpacks (50+ mods typically need 6G+)
 java_args: "-Xms2G -Xmx4G"
 
+# ─── Shader packs ──────────────────────────────────────────────────────────
+# Shader packs are client-only and placed in shaderpacks/ in the game directory.
+# Requires Iris Shaders (or another shader-compatible renderer) in the mods list.
+#
+# URL tips:
+#   Modrinth: open shader page → Versions → right-click download → Copy link address
+#   Shader pack URLs end in .zip (not .jar)
+#
+shader_packs:
+  - name: "Complementary Reimagined"
+    url: "https://cdn.modrinth.com/data/HVnmMxH1/versions/836bPNGo/ComplementaryReimagined_r5.7.1.zip"
+
 # ─── Mods ──────────────────────────────────────────────────────────────────
 # side: both   → included in server AND client artifacts (most mods)
 # side: server → server artifact only (e.g. profiling, anti-cheat utilities)
@@ -49,9 +61,14 @@ java_args: "-Xms2G -Xmx4G"
 mods:
   # Fabric API is required by almost all Fabric mods
   - name: "Fabric API"
-    url: "https://cdn.modrinth.com/data/P7dR8mSH/versions/yGAe1owa/fabric-api-0.116.9%2B1.21.1.jar"
+    url: "https://cdn.modrinth.com/data/P7dR8mSH/versions/ID8pq1x1/fabric-api-0.116.10%2B1.21.1.jar"
     side: both
 
+  # Iris Shaders — required if you want to use shader packs (uncomment to enable)
+  - name: "Iris Shaders"
+    url: "https://cdn.modrinth.com/data/YL57xq9U/versions/zsoi0dso/iris-fabric-1.8.8%2Bmc1.21.1.jar"
+    side: client
+    
   # Sodium — client-side rendering optimization (not needed on server)
   - name: "Sodium"
     url: "https://cdn.modrinth.com/data/AANobbMI/versions/u1OEbNKx/sodium-fabric-0.6.13%2Bmc1.21.1.jar"
