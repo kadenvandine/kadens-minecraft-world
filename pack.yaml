@@ -308,8 +308,18 @@ mods:
  #   url: "https://cdn.modrinth.com/data/oXgmplvv/versions/t76oZsgc/DoggyTalentsNext%5BFabric%5D-1.21.1-1.18.63.jar"
  #   side: both
 
-  # PetAddons — Addons for dogs, cats, all entities, etc..
-  - name: "PetAddons"
+  # Trinkets — A data-driven accessory mod (required by Player Collars)
+  - name: "Trinkets"
+    url: "https://cdn.modrinth.com/data/5aaWibi9/versions/JagCscwi/trinkets-3.10.0.jar"
+    side: both
+
+  # Cardinal Components API — Data attachment API (required by Trinkets)
+  - name: "Cardinal Components API"
+    url: "https://cdn.modrinth.com/data/K01OU20C/versions/nLsCe2VD/cardinal-components-api-6.1.3.jar"
+    side: both
+
+  # Player Collars — Addons for dogs, cats, all entities, etc..
+  - name: "Player Collars"
     url: "https://cdn.modrinth.com/data/E1XS8bXN/versions/W8SdljVL/PlayerCollars-1.6.0%2B1.21.1.jar"
     side: both
 
