@@ -6,6 +6,9 @@
 # Display name shown in the launcher window and GitHub release title
 name: "Kaden's Minecraft World"
 
+# GitHub repository to full packs from"
+github_repo: "kadenvandine/kadens-minecraft-world"
+
 # Modpack version — set automatically from git tags at build time
 version: "0.0.0-devel"
 
