@@ -7,9 +7,33 @@ on:
   workflow_dispatch:
 
 jobs:
+  set-version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Compute version from git tags
+        id: version
+        run: |
+          if git describe --tags --exact-match HEAD 2>/dev/null; then
+            VERSION=$(git describe --tags --exact-match HEAD | sed 's/^v//')
+          elif git describe --tags --abbrev=8 HEAD 2>/dev/null; then
+            VERSION=$(git describe --tags --abbrev=8 HEAD | sed 's/^v//')
+          else
+            VERSION="devel"
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "Computed version: $VERSION"
+
   build:
+    needs: set-version
     uses: kenvandine/minecraft-server-snap/.github/workflows/reusable-pack-build.yml@main
     with:
       config: pack.yaml
+      version: ${{ needs.set-version.outputs.version }}
     secrets:
       azure_client_id: ${{ secrets.AZURE_CLIENT_ID }}
