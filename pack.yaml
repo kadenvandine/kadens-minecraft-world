@@ -318,6 +318,23 @@ mods:
     url: "https://cdn.modrinth.com/data/5MaZBjPT/versions/gkPIpiQa/cozys-improved-cats-1.3.0-1.21.1.jar"
     side: both
 
+  # [Let's Do] Bakery - Farm&Charm Compat — Bake many variations of Bread, Cupcakes and Cakes! Eatable, placeable. This version was made for improved compat with [Let's Do] Farm & Charm
+  #DEPENDENCY: MAY REQUIRE [Let's Do] API
+  - name: "[Let's Do] Bakery"
+    url: "https://cdn.modrinth.com/data/oNB5jhlA/versions/Wfs6V69X/letsdo-bakery-fabric-2.1.6.jar"
+    side: both
+
+  # [Let's Do] Farm&Charm — The farm calls: Experience the art of advanced agriculture and farmhouse cuisine! Use mincers, cooking pots, as well as new grains and fruit varieties to enhance your culinary and agricultural skills.
+  #DEPENDENCY: MAY REQUIRE [Let's Do] API
+  - name: "[Let's Do] Farm & Charm"
+    url: "https://cdn.modrinth.com/data/HJetCzWo/versions/NQb1d5es/letsdo-farm_and_charm-fabric-1.1.21.jar"
+    side: both
+
+  # EMI — A feautureful and accessible item and recipe viewer helpful for baking steps
+  - name: "EMI"
+    url: "https://cdn.modrinth.com/data/fRiHVvU7/versions/mYQ3bJs5/emi-1.1.22%2B1.21.1%2Bfabric.jar"
+    side: both
+
   # Add more mods below following the same pattern:
   # - name: "Mod Name"
   #   url: "https://cdn.modrinth.com/..."
