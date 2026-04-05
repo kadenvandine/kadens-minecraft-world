@@ -67,6 +67,11 @@ mods:
     url: "https://cdn.modrinth.com/data/P7dR8mSH/versions/ID8pq1x1/fabric-api-0.116.10%2B1.21.1.jar"
     side: both
 
+  # Forge Config API Port — Required by Doggy Talents Next on Fabric
+  - name: "Forge Config API Port"
+    url: "https://cdn.modrinth.com/data/ohNO6lps/versions/4PjFJ0bp/ForgeConfigAPIPort-v21.1.5-1.21.1-Fabric.jar"
+    side: both
+
   # CreativeCore — A core library mod required by AmbientSounds and other mods
   - name: "CreativeCore"
     url: "https://cdn.modrinth.com/data/OsZiaDHq/versions/4EBcqGWq/CreativeCore_FABRIC_v2.13.29_mc1.21.1.jar"
@@ -306,10 +311,11 @@ mods:
     side: both
 
   # Doggy Talents Next — The Art of Minecraft Wolf.
-  # DEPENDANCIES: Forge Config API Port and Indium
- # - name: "Doggy Talents Next"
- #   url: "https://cdn.modrinth.com/data/oXgmplvv/versions/t76oZsgc/DoggyTalentsNext%5BFabric%5D-1.21.1-1.18.63.jar"
- #   side: both
+  # Requires Forge Config API Port on Fabric. Indium is not added here because this pack uses Sodium 0.6.13,
+  # and Indium is no longer required and is marked incompatible with Sodium 0.6.0+ by the Indium project.
+  - name: "Doggy Talents Next"
+    url: "https://cdn.modrinth.com/data/oXgmplvv/versions/t76oZsgc/DoggyTalentsNext%5BFabric%5D-1.21.1-1.18.63.jar"
+    side: both
 
   # Trinkets — A data-driven accessory mod (required by Player Collars)
   - name: "Trinkets"
