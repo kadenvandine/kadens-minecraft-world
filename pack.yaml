@@ -142,7 +142,7 @@ mods:
   # Mod Menu — Adds a mod menu to view the list of mods you have installed.
   - name: "Mod Menu"
     url: "https://cdn.modrinth.com/data/mOgUt4GM/versions/v6Xx3fbU/modmenu-11.0.4.jar"
-    side: client
+    side: both
 
   # Owo Lib — Adds a mod menu to view the list of mods you have installed.
   - name: "Owo Lib"
