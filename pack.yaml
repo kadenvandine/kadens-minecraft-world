@@ -156,6 +156,16 @@ mods:
   - name: "Owo Lib"
     url: "https://cdn.modrinth.com/data/ccKDOlHs/versions/JB1fLQnc/owo-lib-0.12.15.4%2B1.21.jar"
     side: both
+
+  # ImmediatelyFast — Speed up immediate mode rendering in Minecraft.
+  - name: "ImmediatelyFast"
+    url: "https://cdn.modrinth.com/data/5ZwdcRci/versions/yHztKxR5/ImmediatelyFast-Fabric-1.6.10%2B1.21.1.jar"
+    side: client
+
+  # ModernFix — All-in-one mod that improves performance, reduces memory usage, and fixes many bugs. Compatible with all your favorite performance mods!
+  - name: "ModernFix"
+    url: "https://cdn.modrinth.com/data/nmDcB62a/versions/NnNX8LBn/modernfix-fabric-5.25.1%2Bmc1.21.1.jar"
+    side: both
     
 #-----------------------------------------------------------------------------------------------------
   # Complementary Shader — Euphoria Patches is an add-on for Complementary Shaders, extending it with more optional features and settings.
