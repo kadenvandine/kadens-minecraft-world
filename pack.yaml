@@ -6,8 +6,8 @@
 # Display name shown in the launcher window and GitHub release title
 name: "Kaden's Minecraft World"
 
-# Modpack version — bump this with each release (independent of Minecraft version)
-version: "0.0.1"
+# Modpack version — set automatically from git tags at build time
+version: "devel"
 
 # Target Minecraft Java Edition version
 minecraft_version: "1.21.1"

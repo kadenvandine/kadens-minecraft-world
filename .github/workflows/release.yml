@@ -14,13 +14,28 @@ on:
         type: string
 
 jobs:
+  set-version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - name: Compute version from tag
+        id: version
+        run: |
+          TAG="${{ github.ref_name != 'main' && github.ref_name || inputs.tag }}"
+          VERSION=$(echo "$TAG" | sed 's/^v//')
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "Computed version: $VERSION"
+
   release:
+    needs: set-version
     uses: kenvandine/minecraft-server-snap/.github/workflows/reusable-pack-release.yml@main
     with:
       # Path to your pack YAML — change if you renamed it
       config: pack.yaml
       # Use the pushed tag, or the manually entered tag for workflow_dispatch
       tag: ${{ github.ref_name != 'main' && github.ref_name || inputs.tag }}
+      version: ${{ needs.set-version.outputs.version }}
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       azure_client_id: ${{ secrets.AZURE_CLIENT_ID }}
