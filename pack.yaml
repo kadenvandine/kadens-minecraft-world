@@ -128,6 +128,26 @@ mods:
   - name: "C2ME"
     url: "https://cdn.modrinth.com/data/VSNURh3q/versions/DSqOVCaF/c2me-fabric-mc1.21.1-0.3.0%2Balpha.0.362.jar"
     side: both
+
+  # Architectury API — An intermediary api aimed to ease developing multiplatform mods.
+  - name: "Architectury API"
+    url: "https://cdn.modrinth.com/data/lhGA9TYQ/versions/Wto0RchG/architectury-13.0.8-fabric.jar"
+    side: both
+
+  # Cloth Config API — Configuration Library for Minecraft Mods.
+  - name: "Cloth Config API"
+    url: "https://cdn.modrinth.com/data/9s6osm5g/versions/HpMb5wGb/cloth-config-15.0.140-fabric.jar"
+    side: both
+
+  # Mod Menu — Adds a mod menu to view the list of mods you have installed.
+  - name: "Mod Menu"
+    url: "https://cdn.modrinth.com/data/mOgUt4GM/versions/v6Xx3fbU/modmenu-11.0.4.jar"
+    side: client
+
+  # Owo Lib — Adds a mod menu to view the list of mods you have installed.
+  - name: "Owo Lib"
+    url: "https://cdn.modrinth.com/data/ccKDOlHs/versions/JB1fLQnc/owo-lib-0.12.15.4%2B1.21.jar"
+    side: both
     
 #-----------------------------------------------------------------------------------------------------
   # Complementary Shader — Euphoria Patches is an add-on for Complementary Shaders, extending it with more optional features and settings.
@@ -168,7 +188,7 @@ mods:
   # Terralith — Adds 100+ biomes using vanilla blocks only
   - name: "Terralith"
     url: "https://cdn.modrinth.com/data/8oi3bsk5/versions/MuJMtPGQ/Terralith_1.21.x_v2.5.8.jar"
-    side: server
+    side: both
 
   # Terralith —
   - name: "Stardust Labs Intro Message Remover"
@@ -275,11 +295,27 @@ mods:
   # Friends&FoesAddon — An addon for the Friends&Foes mod, adding a beekeeper hut structure.
   - name: "Friends&Foes Beekeeper hut"
     url: "https://cdn.modrinth.com/data/Kt4RVKEd/versions/zxhxIzv3/beekeeperhut-fabric-3.0.2%2Bmc1.21.1.jar"
-    side: server
+    side: both
 
   # Friends&FoesAddon — An addon for the Friends&Foes mod, adding one moobloom variant for each flower.
   - name: "Friends&Foes Flowery Mooblooms"
     url: "https://cdn.modrinth.com/data/ECOSu6pa/versions/h7kWOOOB/flowerymooblooms-fabric-3.0.2%2Bmc1.21.1.jar"
+    side: both
+
+  # Doggy Talents Next — The Art of Minecraft Wolf.
+  # DEPENDANCIES: Forge Config API Port and Indium
+ # - name: "Doggy Talents Next"
+ #   url: "https://cdn.modrinth.com/data/oXgmplvv/versions/t76oZsgc/DoggyTalentsNext%5BFabric%5D-1.21.1-1.18.63.jar"
+ #   side: both
+
+  # PetAddons — Addons for dogs, cats, all entities, etc..
+  - name: "PetAddons"
+    url: "https://cdn.modrinth.com/data/E1XS8bXN/versions/W8SdljVL/PlayerCollars-1.6.0%2B1.21.1.jar"
+    side: both
+
+  # Cozy's Improved Cats — A complete upgrade of pet cats ✰ Pet cats have personality, helpful abilities, and can be respawned!
+  - name: "Cozy's Improved Cats"
+    url: "https://cdn.modrinth.com/data/5MaZBjPT/versions/gkPIpiQa/cozys-improved-cats-1.3.0-1.21.1.jar"
     side: both
 
   # Add more mods below following the same pattern:
