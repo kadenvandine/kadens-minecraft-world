@@ -335,6 +335,11 @@ mods:
     url: "https://cdn.modrinth.com/data/fRiHVvU7/versions/mYQ3bJs5/emi-1.1.22%2B1.21.1%2Bfabric.jar"
     side: both
 
+  # Text Placeholder API — Placeholder and Text manipulation library for your Minecraft mods.
+  - name: "Text Placeholder API"
+    url: "https://cdn.modrinth.com/data/eXts2L7r/versions/U5bhVym2/placeholder-api-2.4.2%2B1.21.jar"
+    side: both
+
   # Add more mods below following the same pattern:
   # - name: "Mod Name"
   #   url: "https://cdn.modrinth.com/..."
