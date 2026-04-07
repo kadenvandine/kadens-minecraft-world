@@ -176,6 +176,12 @@ mods:
   - name: "Fabric Language Kotlin"
     url: "https://cdn.modrinth.com/data/Ha28R6CL/versions/21TRTKmh/fabric-language-kotlin-1.13.10%2Bkotlin.2.3.20.jar"
     side: both
+
+  # MaliLib — A library mod for client-side mods. Contains most of the common/shared code of masa's client mods, and adds some inter-operation support between the dependent mods.
+  - name: "MaliLib"
+    url: "https://cdn.modrinth.com/data/GcWjdA9I/versions/C99LEy6r/malilib-fabric-1.21-0.21.10.jar"
+    side: client
+
 #-----------------------------------------------------------------------------------------------------
   # Complementary Shader — Euphoria Patches is an add-on for Complementary Shaders, extending it with more optional features and settings.
   - name: "Euphoria Patches"
@@ -386,6 +392,11 @@ mods:
   # Veinminer Addon — Mine the whole vine on mining a single ore. Known feature by modpacks and pvp games like UHC
   - name: "Veinminer Hotkey"
     url: "https://cdn.modrinth.com/data/dxa0Bm8m/versions/ycz8UR6d/veinminer-client-2.4.2.jar"
+    side: client
+
+  # Litematica — A client-side schematic mod with extra features for creative mode work.
+  - name: "Litematica"
+    url: "https://cdn.modrinth.com/data/bEpr0Arc/versions/aEvrmYqW/litematica-fabric-1.21-0.19.60.jar"
     side: client
 
   # Add more mods below following the same pattern:
