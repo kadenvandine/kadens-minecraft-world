@@ -166,7 +166,16 @@ mods:
   - name: "ModernFix"
     url: "https://cdn.modrinth.com/data/nmDcB62a/versions/NnNX8LBn/modernfix-fabric-5.25.1%2Bmc1.21.1.jar"
     side: both
+
+  # Silk — Kotlin Minecraft API - targetting Fabric, Quilt and Paper
+  - name: "Silk"
+    url: "https://cdn.modrinth.com/data/aTaCgKLW/versions/jrC1TCfF/silk-all-1.10.7.jar"
+    side: both
     
+  # Fabric Language Kotlin — This is a mod that enables usage of the Kotlin programming language for Fabric mods.
+  - name: "Fabric Language Kotlin"
+    url: "https://cdn.modrinth.com/data/Ha28R6CL/versions/21TRTKmh/fabric-language-kotlin-1.13.10%2Bkotlin.2.3.20.jar"
+    side: both
 #-----------------------------------------------------------------------------------------------------
   # Complementary Shader — Euphoria Patches is an add-on for Complementary Shaders, extending it with more optional features and settings.
   - name: "Euphoria Patches"
@@ -368,6 +377,16 @@ mods:
   - name: "Text Placeholder API"
     url: "https://cdn.modrinth.com/data/eXts2L7r/versions/U5bhVym2/placeholder-api-2.4.2%2B1.21.jar"
     side: both
+
+  # Veinminer — Mine the whole vine on mining a single ore. Known feature by modpacks and pvp games like UHC
+  - name: "Veinminer"
+    url: "https://cdn.modrinth.com/data/OhduvhIc/versions/1NZqjOaM/veinminer-fabric-2.4.2.jar"
+    side: both
+
+  # Veinminer Addon — Mine the whole vine on mining a single ore. Known feature by modpacks and pvp games like UHC
+  - name: "Veinminer Hotkey"
+    url: "https://cdn.modrinth.com/data/dxa0Bm8m/versions/ycz8UR6d/veinminer-client-2.4.2.jar"
+    side: client
 
   # Add more mods below following the same pattern:
   # - name: "Mod Name"
