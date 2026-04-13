@@ -138,9 +138,9 @@ mods:
     side: both
 
   # Noisium — Optimises worldgen performance for a better gameplay experience.
-  - name: "Noisium"
-    url: "https://cdn.modrinth.com/data/KuNKN7d2/versions/4sGQgiu2/noisium-fabric-2.3.0%2Bmc1.21-1.21.1.jar"
-    side: both
+  #- name: "Noisium"
+    #url: "https://cdn.modrinth.com/data/KuNKN7d2/versions/4sGQgiu2/noisium-fabric-2.3.0%2Bmc1.21-1.21.1.jar"
+  #  side: both
 
   # Architectury API — An intermediary api aimed to ease developing multiplatform mods.
   - name: "Architectury API"
