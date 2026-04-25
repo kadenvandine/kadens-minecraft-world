@@ -187,6 +187,10 @@ mods:
     url: "https://cdn.modrinth.com/data/GcWjdA9I/versions/C99LEy6r/malilib-fabric-1.21-0.21.10.jar"
     side: client
 
+  # Just Enough Items — View Items and Recipes
+  - name: "JEI"
+    url: "https://cdn.modrinth.com/data/u6dRKJwZ/versions/TvqzuFwN/jei-1.21.1-fabric-19.27.0.340.jar"
+    side: both
 #-----------------------------------------------------------------------------------------------------
   # Complementary Shader — Euphoria Patches is an add-on for Complementary Shaders, extending it with more optional features and settings.
   - name: "Euphoria Patches"
