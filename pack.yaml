@@ -416,12 +416,12 @@ mods:
   # Xaero's Minimap — Displays a map of the nearby world terrain, players, mobs, entities in the corner of your screen. Lets you create waypoints which help you find the locations you've marked.
   - name: "Xaero's Minimap"
     url: "https://cdn.modrinth.com/data/1bokaNcj/versions/9kt7Yxig/xaerominimap-fabric-1.21.1-25.3.10.jar"
-    side: both
+    side: client
 
   # Xaero's Worldmap — Adds a full screen world map which shows you what you have explored in the world. Works great together with Xaero's Minimap.
   - name: "Xaero's Worldmap"
     url: "https://cdn.modrinth.com/data/NcUtCpym/versions/wB9wNHUk/xaeroworldmap-fabric-1.21.1-1.40.11.jar"
-    side: both
+    side: client
     
   # Add more mods below following the same pattern:
   # - name: "Mod Name"
