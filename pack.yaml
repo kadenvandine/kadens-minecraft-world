@@ -190,7 +190,7 @@ mods:
   # Just Enough Items — View Items and Recipes
   - name: "JEI"
     url: "https://cdn.modrinth.com/data/u6dRKJwZ/versions/TvqzuFwN/jei-1.21.1-fabric-19.27.0.340.jar"
-    side: both
+    side: client
 
   # Map Link — Downloads and converts tiles and synchronizes players, markers and area overlays from Bluemap, Dynmap, Pl3xMap or Squaremap with Xaero's Minimap and Worldmap. Also displays AFK time in the tab list.
   - name: "Map Link"
