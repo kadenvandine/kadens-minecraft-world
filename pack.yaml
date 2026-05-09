@@ -231,6 +231,11 @@ mods:
   - name: "Carpet Mod"
     url: "https://cdn.modrinth.com/data/TQTTVgYE/versions/f2mvlGrg/fabric-carpet-1.21-1.4.147%2Bv240613.jar"
     side: both
+    
+  # Carpet Extra — Extra Features for Carpet Mod.
+  - name: "Carpet Mod Extras"
+    url: "https://cdn.modrinth.com/data/VX3TgwQh/versions/8gEVsK18/carpet-extra-1.21-1.4.148.jar?mr_download_reason=standalone&mr_game_version=1.21.1&mr_loader=fabric"
+    side: server
 
   # Terralith — Adds 100+ biomes using vanilla blocks only
   - name: "Terralith"
